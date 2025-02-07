@@ -4,7 +4,7 @@ const path = require("path")
 
 
 const callbackFetch = (callback) => {
-    const FilePath = path.join(__dirname, "sample1.json"); //The FilePath variable stores the directory to the json file
+    const FilePath = path.join(__dirname, "Sample1.json"); //The FilePath variable stores the directory to the json file
 
     fs.readFile(FilePath, 'utf-8', (error, data) => { // Using the fs.readFile to read the file in the FilePath directory
         if (error){

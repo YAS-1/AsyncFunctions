@@ -3,7 +3,7 @@ const path = require("path");
 
 const FetchPromise = () => {
 
-    const FilePath = path.join(__dirname, "Sample2.json"); // Storing the the json file directory in the FilePath variable
+    const FilePath = path.join(__dirname, "Sample1.json"); // Storing the the json file directory in the FilePath variable
 
     return fs.readFile(FilePath, "utf-8") // use the fs.readFile to read the file details
 

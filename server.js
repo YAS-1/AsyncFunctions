@@ -2,6 +2,7 @@ const express = require("express");
 
 const callbackFetch = require("./callback");
 const FetchPromise = require("./promises");
+const FetchAsync = require("./asnycAwait");
 
 
 const app = express();
@@ -24,6 +25,9 @@ app.listen(port, (req, res)=>{
     //Using the Promise method
     FetchPromise()
     .then((data) => {
-        console.log('Using the Promise method data in Sample2.json:',data);
+        console.log('Using the Promise method data in Sample1.json:',data, "\n");
     });
+
+
+    FetchAsync();
 });
